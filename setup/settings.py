@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,4 +134,15 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
+}
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Painel API Toys",
+    "site_header": "Administração de Brinquedos",
+    "site_brand": "API Toys",
+    "welcome_sign": "Bem-vindo ao painel de gestão",
+    "copyright": "2025",
+    "search_model": ["toys.Toy"],
+    "show_sidebar": True,
+    "navigation_expanded": True,
 }
